@@ -1,0 +1,13 @@
+ul {
+    display: flex;
+    gap: 15px;
+}
+
+.listImgAndValueContainer {
+    display: flex;
+    gap: 15px;
+}
+
+li {
+    list-style: none;
+}
