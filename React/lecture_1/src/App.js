@@ -1,6 +1,7 @@
 import { Button } from "./Button";
 import { Cards } from "./Cards";
 import { Footer } from "./Footer";
+import { Image } from "./Image/Image";
 import Input from "./Input";
 import Paragraph from "./Paragraph";
 
@@ -24,11 +25,9 @@ function App() {
       <Footer />
       <Paragraph /> */}
 
-      <Button value='register'  background = 'blue' />
-      <Button value='Buy' background = 'pink'  />
-      <Button value='Sign Up' background = 'red' />
-
-
+      <Button value="register" background="blue" />
+      <Button value="Buy" background="pink" />
+      <Button value="Sign Up" background="red" />
 
       {/* <Cards name={'salome'} Email={'Salome@gmail.com'} /> */}
 
@@ -41,15 +40,17 @@ function App() {
         );
       })} */}
 
-      {
-        userdata.map(item => {
-          return (
-            <>
-            <Cards name={item.name} Email={item.Email} style = 'none' />
-            </>
-          )
-        })
-      }
+      {userdata.map((item) => {
+        return (
+          <>
+            <Cards name={item.name} Email={item.Email} style="none" />
+          </>
+        );
+      })}
+
+      {/* <img style={{width: '1000px'}} src={require('./Assets/Macbook.jpg')} /> */}
+      <Image image_url='Macbook.jpg' width='750px' />
+
     </div>
   );
 }
