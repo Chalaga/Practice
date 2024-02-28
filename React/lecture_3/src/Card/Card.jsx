@@ -1,5 +1,5 @@
 
-const Card = (initialvalue) => {
+const Card = ({initialvalue}) => {
   return (
     <div>
         <h1>{initialvalue}</h1>

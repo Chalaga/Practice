@@ -23,10 +23,17 @@ function App() {
 
   // }
 
-  const [checknumber, SetCheckNumber] = useState(0);
+  // const [checknumber, SetCheckNumber] = useState(0);
+
+  // const CheckNumbers = (num) => {
+  //   SetCheckNumber(num)
+  // }
+
+  const [Revial, SetReavial] = useState(false)
 
   return (
     <div className="App">
+
       {/* <Button type="Resolve" />
       <Button type="Reject" />
       <Images sorce='https://as1.ftcdn.net/v2/jpg/05/78/49/88/1000_F_578498891_sxM567ugz3KOwGP4VnOGmNczb88SA4em.jpg' width={200} /> */}
@@ -36,48 +43,37 @@ function App() {
       <button onClick={resetfun}>Reset</button>
       <button onClick={dicresefun}>Dicrease</button> */}
 
-      {checknumber === 0 ? (
+      {/* {checknumber === 0 ? (
         <>
-              <button
-        onClick={() => {
-          SetCheckNumber(1);
-        }}
-      >
-        1
-      </button>
-      <button
-        onClick={() => {
-          SetCheckNumber(2);
-        }}
-      >
-        2
-      </button>
-      <button
-        onClick={() => {
-          SetCheckNumber(3);
-        }}
-      >
-        3
-      </button>
-      <button
-        onClick={() => {
-          SetCheckNumber(4);
-        }}
-      >
-        4
-      </button>
-      <button
-        onClick={() => {
-          SetCheckNumber(5);
-        }}
-      >
-        5
-      </button>
+          <button
+            onClick={() => CheckNumbers(1)}
+          >
+            1
+          </button>
+          <button
+            onClick={() => CheckNumbers(2)}
+          >
+            2
+          </button>
+          <button
+            onClick={() => CheckNumbers(3)}
+          >
+            3
+          </button>
+          <button
+            onClick={() => CheckNumbers(4)}
+          >
+            4
+          </button>
+          <button
+            onClick={() => CheckNumbers(5)}
+          >
+            5
+          </button>
         </>
       ) : (
         <Card initialvalue={checknumber} />
-      )}
-
+      )} */}
     </div>
   );
 }
