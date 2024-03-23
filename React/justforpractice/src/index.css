@@ -1,0 +1,9 @@
+button {
+    background-color: black;
+    color: red;
+}
+
+.buttoncontainer {
+    display: flex;
+    gap: 15px;
+}

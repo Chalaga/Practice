@@ -1,13 +1,17 @@
 import React from "react";
 
-const Card = ({ info, backgrcolor, color, changedcolor }) => {
+const Card = ({ buttonValues, bckcolor, handleColorChange }) => {
   return (
-    <button
-      onClick={changedcolor}
-      style={{ backgroundColor: backgrcolor, color: color }}
-    >
-      {info}
-    </button>
+    <div className="buttoncontainer">
+      {buttonValues.map((value, index) => (
+        <button
+          style={{ backgroundColor: bckcolor === index ? "white" : "black" }}
+          onClick={() => handleColorChange(index)}
+        >
+          {value}
+        </button>
+      ))}
+    </div>
   );
 };
 

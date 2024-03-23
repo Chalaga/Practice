@@ -1,21 +1,25 @@
-import { useState } from 'react'
-import Card from './Card/Card'
-
+// App.jsx
+import { useState } from "react";
+import Card from "./Card/Card";
 
 function App() {
-  const [Color, SetColor] = useState('blue')
+  const [colorIndex, setColorIndex] = useState(-1);
 
-  const handleColorChange = () => {
-    SetColor(Color === 'blue' ? 'red' : 'blue')
-  }
+  const buttonValues = ["1", "2", "3", "4", "5"]
+  
+  const handleColorChange = (index) => {
+    setColorIndex(index);
+  };
 
-
-  return(
+  return (
     <>
-    <Card backgrcolor={Color} color='White' info='Change my color' changedcolor={handleColorChange} />
+      <Card
+        buttonValues={buttonValues}
+        bckcolor={colorIndex}
+        handleColorChange={handleColorChange}
+      />
     </>
-  )
-
+  );
 }
 
-export default App
+export default App;
